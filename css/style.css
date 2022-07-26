@@ -6,7 +6,7 @@
 .header{
     	display: flex;
     	justify-content: space-between;
-	border-bottom: 1px solid #0000001a;
+	border-bottom: 1px solid #0000000f;
 }
 .left-header{
     	display: flex;`
@@ -25,7 +25,7 @@
 	flex: .8;
 	display: flex;
 	margin: 3px 20px;
-	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	background: #eef3fc;
 }
 .middle-header span{
 	padding: 12px;
@@ -37,6 +37,7 @@
     	border: none;
     	width: 100%;
     	font-size: 16px;
+	background: #eef3fc;
 }
 .middle-header input:focus{
 	outline:none;
@@ -75,18 +76,15 @@
     	background: #c2e7ff;
     	border-radius: 10px;
 }
-.side-body{
-	width: 290px;
-}
 .sb-content{
-	margin: 20px;
-	margin: 20px;
+	margin-top: 20px;
     	overflow-y: scroll;
     	height: 220px;
 }
 .sb-content li{
     	list-style: none;
 	line-height: 26px;
+	padding: 5px 24px 0px;
 }
 span.sb-content{
     	vertical-align: middle;
@@ -128,15 +126,132 @@ span.sb-content{
     	vertical-align: super;
     	font-weight: 500;
 }
+.side-body{
+	display: flex;
+    	flex-direction: column;
+	flex: 20%;
+}
 .main-body{
     	display: flex;
 }
 .middle-body{
-    	display: flex;
+	width: 70%;
+	flex: 76%;
 }
 .head1{
-    	display: flex;
+	display: flex;
+    	width: 100%;
+    	justify-content: space-between;
+	padding: 10px;
+}
+.head1-left span{
+	vertical-align: bottom;
 }
 .head1-sub #ard{
     	vertical-align: super;
+}
+.head1-left input{
+    	height: 15px;
+    	width: 15px;
+}
+.head1-right span{
+	font-size: 15px;
+    	padding: 0px 10px;
+}
+.head2{
+	padding: 20px 5px;
+    	display: flex;
+}
+#dis{
+    	vertical-align: super;
+	font-size: 15px;
+	color: #6e6e6e;
+}
+.primary,.social,.promotion{
+    	width:30%;	
+}
+.primary span,.social span,.promotion span{
+    	font-size: 20px;
+	
+}
+.primary span,.primary #dis{
+	color:#0b57d0;
+}
+.primary{
+	border-bottom: 2px solid #0b57d0;
+}
+.right-body{
+	flex-direction: column;
+	display: flex;
+    	flex: 4%;
+}
+.right-body img{
+    	width: 25px;
+	padding: 10px 24px;
+}
+.right-body img:nth-child(5){
+    	padding-top: 40px;
+}
+
+.mid-content{
+    	display: flex;
+   	padding: 5px 10px;
+    	justify-content: space-between;
+	border: 1px solid #0000000f;
+}
+.cnt1,.cnt2,.cnt3{
+	display: flex;
+}
+.cnt2 span{
+    	padding: 0px 10px;
+}
+.cnt3 span{
+	padding: 5px 10px;
+    	font-size: 14px;
+    	font-weight: 600;
+}
+.cnt1 span{
+	padding: 0px 5px;
+}
+
+.cnt1 input{
+    	width: 15px;
+}
+#sub{
+	font-size:14px;
+	font-weight:bold;
+}
+#sub2{
+	font-size: 14px;
+    	color: #6e6e6e;
+}
+#sub,#sub2,#badge3{
+	padding: 5px;
+}
+#rect-imp{
+    	background: #c2e7ff;
+    	margin-right: 14px;
+    	border-radius: 0px 10px 10px 0px;
+    	padding: 5px 24px 0px;
+}
+#key-bd{
+    	font-size: 24px;
+    	vertical-align: sub;
+    	padding: 2px;
+}
+#key-spn{
+    	font-size: 24px;
+    	padding: 0;
+    	vertical-align: bottom;
+}
+#badge3{
+	color: #00ff1f42;
+}
+@media screen and (min-width: 992px) {
+.cnt1 input{
+	    margin-bottom: 14px;
+	}
+}
+@media screen and (min-width: 1280px) {
+
 }
