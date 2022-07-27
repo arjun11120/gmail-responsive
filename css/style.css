@@ -129,23 +129,23 @@ span.sb-content{
 .side-body{
 	display: flex;
     	flex-direction: column;
-	flex: 20%;
+    	flex: 20%;
 }
 .main-body{
     	display: flex;
 }
 .middle-body{
-	width: 70%;
-	flex: 76%;
+    	flex: 72%;
 }
 .head1{
 	display: flex;
-    	width: 100%;
     	justify-content: space-between;
-	padding: 10px;
+}
+.head1-left{
+    	display: flex;
 }
 .head1-left span{
-	vertical-align: bottom;
+	margin: 4px;
 }
 .head1-sub #ard{
     	vertical-align: super;
@@ -153,13 +153,13 @@ span.sb-content{
 .head1-left input{
     	height: 15px;
     	width: 15px;
+	margin:10px;
 }
 .head1-right span{
 	font-size: 15px;
     	padding: 0px 10px;
 }
 .head2{
-	padding: 20px 5px;
     	display: flex;
 }
 #dis{
@@ -168,7 +168,9 @@ span.sb-content{
 	color: #6e6e6e;
 }
 .primary,.social,.promotion{
-    	width:30%;	
+    	width: 24%;
+	display: flex;
+	margin: 0px 10px;	
 }
 .primary span,.social span,.promotion span{
     	font-size: 20px;
@@ -177,25 +179,31 @@ span.sb-content{
 .primary span,.primary #dis{
 	color:#0b57d0;
 }
+.primary span,.primary #dis,
+.social span,.social #dis,
+.promotion span,.promotion #dis{
+    padding: 4%;
+}
 .primary{
 	border-bottom: 2px solid #0b57d0;
 }
 .right-body{
 	flex-direction: column;
 	display: flex;
-    	flex: 4%;
+    	flex: 4%; 	
 }
 .right-body img{
     	width: 25px;
-	padding: 10px 24px;
+    	margin: 0 auto;
+    	padding: 10px 24px;
 }
 .right-body img:nth-child(5){
     	padding-top: 40px;
 }
 
 .mid-content{
+    	padding: 6px;
     	display: flex;
-   	padding: 5px 10px;
     	justify-content: space-between;
 	border: 1px solid #0000000f;
 }
@@ -244,14 +252,37 @@ span.sb-content{
     	padding: 0;
     	vertical-align: bottom;
 }
+/*
 #badge3{
 	color: #00ff1f42;
 }
-@media screen and (min-width: 992px) {
-.cnt1 input{
-	    margin-bottom: 14px;
-	}
+@media screen and (max-width: 1024px) {
+	#sub,#sub2,#badge3,.cnt1 span,.cnt3 span {
+    		font-size: 11px;
 }
-@media screen and (min-width: 1280px) {
+}
+@media screen and (max-width: 992px) {
+#sub,#sub2,#badge3,.cnt1 span {
+    		font-size: 9px;
+}
+}
+@media screen and (max-width: 768px) {
+	#sub,#sub2,#badge3,.cnt1 span,.cnt3 span  {
+		    font-size: 6px;
+}
+}
+@media screen and (max-width: 480px) {
+	#sub,#sub2,#badge3,.cnt1 span,.cnt3 span  {
+		    font-size: 4px;
+}
+.primary span, .primary #dis,
+ .social span, .social #dis,
+ .promotion span, .promotion #dis {
+
 
 }
+.head1-right span,.head1-left span,.head1-right input,.head1-left input{
+font-size: 13px;
+}
+}
+*/
