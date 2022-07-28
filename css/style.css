@@ -74,7 +74,7 @@
     	padding: 15px;
     	border: none;
     	background: #c2e7ff;
-    	border-radius: 10px;
+    	border-radius: 20px;
 }
 .sb-content{
 	margin-top: 20px;
@@ -99,10 +99,10 @@ span.sb-content{
 .sb-content span{
 	font-weight: 600;
 	font-size: 20px;
-    	color: #6e6e6e;
+    	color: #000000;
 }
 .cmp{
-  	padding: 5px 20px;
+  	padding: 10px 5px;
 }
 .lbls{
 	display: flex;
@@ -140,12 +140,14 @@ span.sb-content{
 .head1{
 	display: flex;
     	justify-content: space-between;
+	margin: 10px 3px;
 }
 .head1-left{
     	display: flex;
 }
 .head1-left span{
 	margin: 4px;
+	font-size: 20px;
 }
 .head1-sub #ard{
     	vertical-align: super;
@@ -156,8 +158,8 @@ span.sb-content{
 	margin:10px;
 }
 .head1-right span{
-	font-size: 15px;
     	padding: 0px 10px;
+	font-size: 15px;
 }
 .head2{
     	display: flex;
@@ -166,6 +168,7 @@ span.sb-content{
     	vertical-align: super;
 	font-size: 15px;
 	color: #6e6e6e;
+	margin: 0px 15px;
 }
 .primary,.social,.promotion{
     	width: 24%;
@@ -173,7 +176,7 @@ span.sb-content{
 	margin: 0px 10px;	
 }
 .primary span,.social span,.promotion span{
-    	font-size: 20px;
+    	font-size: 22px;
 	
 }
 .primary span,.primary #dis{
@@ -182,7 +185,7 @@ span.sb-content{
 .primary span,.primary #dis,
 .social span,.social #dis,
 .promotion span,.promotion #dis{
-    padding: 4%;
+    	    padding: 4% 0%;
 }
 .primary{
 	border-bottom: 2px solid #0b57d0;
@@ -219,15 +222,19 @@ span.sb-content{
     	font-weight: 600;
 }
 .cnt1 span{
-	padding: 0px 5px;
+	padding: 0px 16px;
+	opacity: 0.2;
 }
 
 .cnt1 input{
     	width: 15px;
+	margin-left: 7px;
 }
 #sub{
 	font-size:14px;
 	font-weight:bold;
+	padding: 5px;
+    	opacity: 1 !important;
 }
 #sub2{
 	font-size: 14px;
@@ -243,7 +250,7 @@ span.sb-content{
     	padding: 5px 24px 0px;
 }
 #key-bd{
-    	font-size: 24px;
+    	font-size: 20px;
     	vertical-align: sub;
     	padding: 2px;
 }
@@ -252,6 +259,29 @@ span.sb-content{
     	padding: 0;
     	vertical-align: bottom;
 }
+#rect-imp   h5{
+  	display: inline;
+    	vertical-align: super;
+    	float: right;
+    	color: #00000;
+    	font-size: 12px;
+}
+#badge3{
+    	color: #00ff00;
+}
+.cb span{
+	opacity: .5;
+}
+#rect-imp a{
+    	color: #000000;
+    	font-weight: 700;
+}
+@media screen and (max-width: 768px) {
+.container{
+    width: 724px;
+}
+}
+
 /*
 #badge3{
 	color: #00ff1f42;
