@@ -108,6 +108,7 @@ span.sb-content{
 	display: flex;
     	justify-content: space-between;
 	color: #6e6e6e;
+	margin-top: 15px;
 }
 .lbls h2{
 	font-size: 18px;
@@ -132,10 +133,10 @@ span.sb-content{
     	flex: 20%;
 }
 .main-body{
-    display: flex;
+    	display: flex;
 }
 .middle-body{
-    flex: 72%;
+    	flex: 72%;
 }
 .head1{
 	display: flex;
@@ -281,7 +282,14 @@ span.sb-content{
 }
 }
 @media screen and (max-width: 425px) {
+.header{
+	background: #eef3fc;
+	margin: 20px;
+    	border-radius: 20px;
+    	box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
+}
 .head2{
+	
 	display: block;
     	width: 100%;
 }
@@ -290,10 +298,11 @@ span.sb-content{
     	font-size: 60px;
 }
 .middle-header span {
-    	padding: 40px 10px;
-    	font-size: 60px;
+    	padding: 46px 10px;
+    	font-size: 50px;
 }
 .middle-header input {
+	flex:1;
     	padding: 8px;
     	border: none;
     	width: 100%;
@@ -335,10 +344,14 @@ span.sb-content{
 	font-size: 30px;
 }
 #sub2{
-    	display: none;
+    	display: none;s
 }
 .cnt1 input {
     	width: 50px;
+}
+.cnt1 span {
+    font-size: 50px;
+    padding: 10px 16px;
 }
 .scrl-br {
     	overflow: scroll;
